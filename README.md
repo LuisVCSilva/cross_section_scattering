@@ -57,6 +57,16 @@ H2 + Xe:
   yAxis="y"
 />
 
+Here are some notes about the problem:
+
+
+<PdfViewer
+  data={{
+    url: 'https://github.com/LuisVCSilva/doutorado/blob/main/Se%C3%A7%C3%A3o%20de%20choque/rascunho/report.pdf'
+  }}
+  parentClassName="h-96"
+/>
+
 
 Cannot plot multiple series in the same plot :|
 
