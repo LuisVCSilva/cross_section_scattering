@@ -16,6 +16,18 @@ datapackage:
         type: number
       - name: y
         type: number
+
+  - path: h2xe/resultado.csv
+    title: Cross section scattering
+    name: cross-section
+    format: csv
+    schema:
+      fields:
+      - name: x
+        type: number
+      - name: y
+        type: number
+
                                                                                                                                                                                                                                                                                                 
 ---
 
