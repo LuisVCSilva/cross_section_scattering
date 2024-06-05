@@ -21,10 +21,11 @@ datapackage:
 
 Simulation result:
 
-<LineChart
-  data="./h2ar/resultado.csv"
-  title="H2+ - Ar Cross-Section scattering"
-  xAxis="eV"
-  yAxis="Cross Section"
+<PlotlyLineChart
+  data={{
+    url: 'https://raw.githubusercontent.com/LuisVCSilva/cross_section_scattering/main/h2ar/resultado.csv'
+  }}
+  title="Cross section"
+  xAxis="x"
+  yAxis="y"
 />
-
