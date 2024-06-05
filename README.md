@@ -85,14 +85,6 @@ H2 + Xe:
   yAxis="y"
 />
 
-
-<PlotlyScatterPlot
-        data={{ url: 'https://github.com/LuisVCSilva/cross_section_scattering/iris.csv' }}
-        title="Cross Section"
-        xAxis="x"
-        yAxis="y"
-      />
-
 Here are some notes about the problem:
 
 
