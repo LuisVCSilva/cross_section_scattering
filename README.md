@@ -76,6 +76,8 @@ Here are some notes about the problem:
   parentClassName="h-96"
 />
 
+I tried to include a PDF file but couldn't, not sure why, tried the pdf url and the blob one.
+
 Cannot plot multiple series in the same plot :|
 
 
