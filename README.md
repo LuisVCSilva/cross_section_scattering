@@ -32,6 +32,34 @@ datapackage:
       - name: z
         type: number
 
+  - path: h2xe/resultado.csv
+    title: Cross section scattering
+    name: cross-section
+    format: csv
+    schema:
+      fields:
+      - name: x
+        type: number
+      - name: y
+        type: number
+      - name: z
+        type: number
+
+  - path: iris.csv
+    title: Iris
+    name: iris
+    format: csv
+    schema:
+      fields:
+      - name: sepal_length
+        type: number
+      - name: sepal_width
+        type: number
+      - name: petal_length
+        type: number
+      - name: petal_width
+        type: number
+
                                                                                                                                                                                                                                                                                                 
 ---
 
@@ -56,6 +84,14 @@ H2 + Xe:
   xAxis="x"
   yAxis="y"
 />
+
+
+<PlotlyScatterPlot
+        data={{ url: 'https://github.com/LuisVCSilva/cross_section_scattering/iris.csv' }}
+        title="Cross Section"
+        xAxis="x"
+        yAxis="y"
+      />
 
 Here are some notes about the problem:
 
