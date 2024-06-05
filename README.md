@@ -57,10 +57,7 @@ datapackage:
       - name: 21
         type: number
       - name: 22
-        type: number                                                                                                                                                        
-      - name: 23
-        type: number                                                                                                                                                        
-                                                                                                                                                     
+        type: number                                                                                                                                                                                                                                                                                                             
 ---
 
 Simulation result:
