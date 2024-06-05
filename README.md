@@ -29,6 +29,8 @@ datapackage:
         type: number
       - name: y
         type: number
+      - name: z
+        type: number
 
                                                                                                                                                                                                                                                                                                 
 ---
