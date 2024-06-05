@@ -19,11 +19,22 @@ datapackage:
                                                                                                                                                                                                                                                                                                 
 ---
 
-Simulation result:
+Simulation result (H2+ - Ar):
 
 <PlotlyLineChart
   data={{
     url: 'https://raw.githubusercontent.com/LuisVCSilva/cross_section_scattering/main/h2ar/resultado.csv'
+  }}
+  title="Cross section"
+  xAxis="x"
+  yAxis="y"
+/>
+
+
+H2 + Xe:
+<PlotlyLineChart
+  data={{
+    url: 'https://raw.githubusercontent.com/LuisVCSilva/cross_section_scattering/main/h2xe/resultado.csv'
   }}
   title="Cross section"
   xAxis="x"
