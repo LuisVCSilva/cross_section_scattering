@@ -16,6 +16,8 @@ datapackage:
         type: number
       - name: y
         type: number
+      - name: z
+        type: number
 
   - path: h2xe/resultado.csv
     title: Cross section scattering
