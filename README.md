@@ -1,7 +1,7 @@
 ---
 datapackage:
-  title: Dataset Template
-  description: A template for a dataset to publish on DataHub. Uses the Data Package metadata.
+  title: Cross section scattering of H2 - Ar and H2 - Xe
+  description: Numerical simulation of cross-section based on "Molecular beam scattering studies of orbiting resonances and the determination of van der Waals potentials for H–Ne, Ar, Kr, and Xe and for H2–Ar, Kr, and Xe"
   licenses:
   - path: http://opendatacommons.org/licenses/pddl/
     title: Open Data Commons Public Domain Dedication and License v1.0
@@ -56,3 +56,8 @@ H2 + Xe:
   xAxis="x"
   yAxis="y"
 />
+
+
+Cannot plot multiple series in the same plot :|
+
+
