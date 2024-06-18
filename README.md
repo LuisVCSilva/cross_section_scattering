@@ -65,7 +65,7 @@ datapackage:
 
 Simulation result (H2+ - Ar):
 
-$$\frac{1}{x}$$
+$$\frac{\partial f}{\partial t} + \mathbf{v} \cdot \nabla f + \mathbf{g} \cdot \nabla_{\mathbf{v}} f = Q(f, f)$$
 
 <PlotlyLineChart
   data={{
