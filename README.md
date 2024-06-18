@@ -89,7 +89,7 @@ H2 + Xe:
 
 Here are some notes about the problem:
 
-```markdown
+
 # Draft
 
 **Luis Vinicius Costa Silva**
@@ -170,7 +170,6 @@ Future research can explore the following areas:
 \bibitem{toennies}
 Toennies, J. P., Welz, W., \& Wolf, G. (1979). Molecular beam scattering studies of orbiting resonances and the determination of van der Waals potentials for H–Ne, Ar, Kr, and Xe and for H2–Ar, Kr, and Xe. The Journal of Chemical Physics, 71(2), 614-642.
 \end{thebibliography}
-```
 
 
 <PdfViewer
