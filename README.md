@@ -101,9 +101,6 @@ The aim is to understand the phenomenon of scattering between the atom of hydrog
 
 Thus, the Schrödinger equation of the system was solved:
 
-$$
-a+b
-$$
 
 
 
