@@ -65,6 +65,16 @@ datapackage:
 
 Simulation result (H2+ - Ar):
 
+$$\frac{1}{x}$$
+
+\begin{equation}
+H\Psi = E\Psi 
+\]
+\[
+\left[ -\frac{\hbar^2}{2m} \Delta + V(\mathbf{r}) \right] \Psi(\mathbf{r}) = E\Psi(\mathbf{r}) 
+\]
+\end{equation}
+
 <PlotlyLineChart
   data={{
     url: 'https://raw.githubusercontent.com/LuisVCSilva/cross_section_scattering/main/h2ar/resultado.csv'
