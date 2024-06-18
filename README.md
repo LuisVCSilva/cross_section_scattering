@@ -106,9 +106,6 @@ $$
 H \Psi = E \Psi
 $$
 
-$$
-\left [ - \frac{\hbar^2}{2m} \Delta + V(r) \right ] \Psi (\vec{r}) = E \Psi (\vec{r})
-$$
 
 
 <PdfViewer
