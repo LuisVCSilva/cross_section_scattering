@@ -89,90 +89,88 @@ H2 + Xe:
 
 Here are some notes about the problem:
 
-\begin{document}
-\noindent
-\large\textbf{Rascunho} \hfill \textbf{Luis Vinicius Costa Silva} \\
-\normalsize Um estudo sobre dispersão 
+```markdown
+# Draft
 
-\subsection*{Ideia}
-Busca-se compreender o fenômeno de dispersão em uma molécula qualquer através de algum procedimento, de preferência numérico. Para este exemplo escolhi a dispersão de uma partícula de Hidrogênio (mais leve) por um potencial de uma partícula de Crípton (mais pesado) no qual resultados experimentais foram publicados por \cite{toennies}. Meu objetivo foi replicar os resultados desenvolvidos no artigo de forma numérica. Para tanto, foi formulada a equação do sistema à partir da equação de Schrodinger, e esta foi resolvida numéricamente (com um potencial de Lennard-Jones para modelar a interação entre partículas) para obter as seções de choque totais e parciais (assim como função de onda, função de onda assintótica, potencial efetivo). \newline
-Assim, resolveu-se a equação de Schrodinger do sistema:
+**Luis Vinicius Costa Silva**
 
-\begin{equation}
+A study on cross-section scattering
+
+## Idea
+
+The aim is to understand the phenomenon of scattering in a generic molecule through some procedure, preferably numerical. For this example, I chose the scattering of a Hydrogen particle (lighter) by a potential of a Krypton particle (heavier), for which experimental results were published by \cite{toennies}. My goal was to replicate the results developed in the article numerically. For this, the system equation was formulated from the Schrödinger equation, and it was solved numerically (with a Lennard-Jones potential to model the interaction between particles) to obtain total and partial cross-sections (as well as wave function, asymptotic wave function, effective potential).
+
+Thus, the Schrödinger equation of the system was solved:
+
+$$
 H \Psi = E \Psi
-\end{equation}
+$$
 
-\begin{equation}
+$$
 \left [ - \frac{\hbar^2}{2m} \Delta + V(r) \right ] \Psi (\vec{r}) = E \Psi (\vec{r})
-\end{equation}
+$$
 
-onde $V(r)$ é um potencial esférico. É sabido que neste caso todas as autofunções do sistema são também autofunções dos operadores de momento angular, ou seja estas podem ser reescritas como combinações linears de harmônicas esféricas na forma:
+where $V(r)$ is a spherical potential. It is known that in this case, all the eigenfunctions of the system are also eigenfunctions of the angular momentum operators, that is, they can be rewritten as linear combinations of spherical harmonics in the form:
 
-\begin{equation}
+$$
 \Psi(\vec{r}) = \sum_{l=0}^{\infty} \sum_{m=-l}^{l} A_{lm} \frac{u_l(r)}{r} Y^{m}_{l} (\theta, \phi)
-\end{equation}
+$$
 
-Aplicando separação de variáveis, isso reduz o problema para o caso radial da equação, onde o problema fica em função da coordenada $r$ que varia de $0$ a $\infty$, m é a massa reduzida do sistema inteiro.
+By applying the separation of variables, this reduces the problem to the radial case of the equation, where the problem is a function of the coordinate $r$ that varies from $0$ to $\infty$, $m$ is the reduced mass of the entire system.
 
-\begin{equation}
-\left [ - \frac{\hbar^2}{2m} \frac{d^2}{dr^2} + \left ( V(r) + \frac{\hbar^2 l (l+1)}{2mr^2} - E \right ) \right ] = u_l(r) = 0	
-\end{equation}
+$$
+\left [ - \frac{\hbar^2}{2m} \frac{d^2}{dr^2} + \left ( V(r) + \frac{\hbar^2 l (l+1)}{2mr^2} - E \right ) \right ] = u_l(r) = 0
+$$
 
-Os deslocamentos de fase $\delta_l$ (dependentes de potencial e energia) são calculado à partir do comportamento assintótico  da função de onda da seguinte forma:
+The phase shifts $\delta_l$ (dependent on potential and energy) are calculated from the asymptotic behavior of the wave function as follows:
 
-\begin{equation}
+$$
 \tan \delta_1 = \frac{Kj_l(kr_1)-j_l(kr_2)}{K n_l(kr_1) - n_l(kr_2)}
-\end{equation}
+$$
 
-onde $k = \sqrt{2m E \hbar^{(-2)}}$, $K = r_1 u_2 (r_2 u_1)^{-1}$ e $u_{1,2} = 
-u_l(r_{r1,2})$, e onde $j_l$ e $n_l$ são funções de Bessel e $r_1 \approx r_2 \approx r_{\text{max}}$. Assim, a seção de choque total é dada por:
+where $k = \sqrt{2m E \hbar^{(-2)}}$, $K = r_1 u_2 (r_2 u_1)^{-1}$ and $u_{1,2} = u_l(r_{r1,2})$, and where $j_l$ and $n_l$ are Bessel functions and $r_1 \approx r_2 \approx r_{\text{max}}$. Thus, the total cross-section is given by:
 
-\begin{equation}
+$$
 \sigma_{\text{total}} = \frac{4 \pi}{k^2} \sum_{l=0}^{\infty} (2l+1) \sin^2 \delta_l
-\end{equation}
+$$
 
-Utilizando o potencial de Lennard-Jones para modelar a interação entre os dois átomos têm-se:
+Using the Lennard-Jones potential to model the interaction between the two atoms, we have:
 
-\begin{equation}
+$$
 V_{LJ}(r) = \epsilon  \left [ \left (  \frac{\sigma}{r}  \right ) ^{12} - 2 \left ( \frac{\sigma}{r}  \right )^6  \right ]
-\end{equation}
+$$
 
-onde $\epsilon = 5.9$ meV e $\sigma = 3.57$ .
+where $\epsilon = 5.9$ meV and $\sigma = 3.57$.
 
+## Results
 
-\subsection*{Resultados}
-O gráfico abaixo é a solução numérica do sistema apresentando as séries das variáveis de interesse do sistema, logo após ele o gráfico original no artigo experimental:
+The graph below is the numerical solution of the system showing the series of variables of interest, followed by the original graph in the experimental article:
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{geral.png}
-\end{figure}
+![Numerical Solution](geral.png)
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{original.png}
-\end{figure}
+![Original Graph](original.png)
 
-No experimento foi relacionado a energia do centro de massa em eletronvolt (eV) a seção de choque total $\sigma$ em barn. O solver foi escrito em Python e foi utilizada o algoritmo de Numerov para resolução da equação do sistema, a biblioteca Scipy para a utilização das funções de Bessel, Numpy para operações em matrizes e séries e Matplotlib para plots. O arquivo ``solver.py" simula a seção de choque resultante da interação de H-Kr, sob os parâmetros especificados em ``params.json", um arquivo csv contendo as séries de interesse pode ser gerado e plotado com o script ``plot.py". Todo o procedimento pode ser executado com o arquivo ``run.sh". Foi considerado que \newline
+In the experiment, the center of mass energy in electronvolts (eV) was related to the total cross-section $\sigma$ in barns. The solver was written in Python and used the Numerov algorithm to solve the system equation, the Scipy library for Bessel functions, Numpy for matrix and series operations, and Matplotlib for plots. The file `solver.py` simulates the cross-section resulting from the H-Kr interaction under the parameters specified in `params.json`, a CSV file containing the series of interest can be generated and plotted with the script `plot.py`. The entire procedure can be executed with the file `run.sh`.
 
+As mentioned earlier, the numerical result seems to be in agreement with the experimental results conducted by \cite{toennies}.
 
-Como dito anteriormente, o resultado numérico parece estar em concordância com os resultados experimentais realizados por \cite{toennies}.
-\section*{O que pode ser explorado}
-Próximas pesquisas podem explorar as seguintes áreas:
+## Future Work
 
-\begin{itemize}
-\item explorando outros modelos que descrevem a interação intermolecular de maneira mais precisa (ao invés do Lennard Jones), por exemplo com modelos não-paramétricos gerados com aprendizado de máquina;
-\item uso de outros métodos de integração além do Numerov (formulação integral do problema por exemplo);
-\item malhas adaptativas;
-\item paralelização do código.
-\item simulação de moléculas complexas com aplicações interessantes (caracterização de materiais)
-\end{itemize}
+Future research can explore the following areas:
+
+- Exploring other models that describe intermolecular interaction more accurately (instead of Lennard-Jones), for example with non-parametric models generated with machine learning.
+- Using other integration methods besides Numerov (e.g., integral formulation of the problem).
+- Adaptive meshes.
+- Code parallelization.
+- Simulation of complex molecules with interesting applications (material characterization).
+
+## References
 
 \begin{thebibliography}{9}
 \bibitem{toennies}
 Toennies, J. P., Welz, W., \& Wolf, G. (1979). Molecular beam scattering studies of orbiting resonances and the determination of van der Waals potentials for H–Ne, Ar, Kr, and Xe and for H2–Ar, Kr, and Xe. The Journal of Chemical Physics, 71(2), 614-642.
 \end{thebibliography}
-\end{document}
+```
 
 
 <PdfViewer
