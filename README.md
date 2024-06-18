@@ -92,18 +92,17 @@ Here are some notes about the problem:
 
 # Draft
 
-**Luis Vinicius Costa Silva**
 
 A study on cross-section scattering
 
 ## Idea
 
-The aim is to understand the phenomenon of scattering in a generic molecule through some procedure, preferably numerical. For this example, I chose the scattering of a Hydrogen particle (lighter) by a potential of a Krypton particle (heavier), for which experimental results were published by Toennies[1]. My goal was to replicate the results developed in the article numerically. For this, the system equation was formulated from the Schrödinger equation, and it was solved numerically (with a Lennard-Jones potential to model the interaction between particles) to obtain total and partial cross-sections (as well as wave function, asymptotic wave function, effective potential).
+The aim is to understand the phenomenon of scattering between the atom of hydrogen and some other inert noble gas, through some procedure, preferably numerical. For this example, I chose the scattering of a Hydrogen particle (lighter) by a potential of a Krypton particle (heavier), for which experimental results were published by Toennies[1]. My goal was to replicate the results developed in the article numerically. For this, the system equation was formulated from the Schrödinger equation, and it was solved numerically (with a Lennard-Jones potential to model the interaction between particles) to obtain total and partial cross-sections (as well as wave function, asymptotic wave function, effective potential).
 
 Thus, the Schrödinger equation of the system was solved:
 
 $$
-H \Psi = E \Psi
+a+b
 $$
 
 
