@@ -137,7 +137,7 @@ The graph below is the numerical solution of the system showing the series of va
 
 In the experiment, the center of mass energy in electronvolts (eV) was related to the total cross-section $\sigma$ in barns. The solver was written in Python and used the Numerov algorithm to solve the system equation, the Scipy library for Bessel functions, Numpy for matrix and series operations, and Matplotlib for plots. The file `solver.py` simulates the cross-section resulting from the H-Kr interaction under the parameters specified in `params.json`, a CSV file containing the series of interest can be generated and plotted with the script `plot.py`. The entire procedure can be executed with the file `run.sh`.
 
-As mentioned earlier, the numerical result seems to be in agreement with the experimental results conducted by \cite{toennies}.
+As mentioned earlier, the numerical result seems to be in agreement with the experimental results conducted by Toennies[1].
 
 ## Future Work
 
