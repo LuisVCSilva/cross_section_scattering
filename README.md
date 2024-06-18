@@ -68,11 +68,7 @@ Simulation result (H2+ - Ar):
 $$\frac{1}{x}$$
 
 \begin{equation}
-H\Psi = E\Psi 
-\]
-\[
-\left[ -\frac{\hbar^2}{2m} \Delta + V(\mathbf{r}) \right] \Psi(\mathbf{r}) = E\Psi(\mathbf{r}) 
-\]
+\frac{1}{x}
 \end{equation}
 
 <PlotlyLineChart
