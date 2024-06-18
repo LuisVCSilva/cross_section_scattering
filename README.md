@@ -67,10 +67,6 @@ Simulation result (H2+ - Ar):
 
 $$\frac{1}{x}$$
 
-\begin{equation}
-\frac{1}{x}
-\end{equation}
-
 <PlotlyLineChart
   data={{
     url: 'https://raw.githubusercontent.com/LuisVCSilva/cross_section_scattering/main/h2ar/resultado.csv'
