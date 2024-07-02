@@ -151,16 +151,6 @@ Future research can explore the following areas:
 
 ## References
 
-
-<PdfViewer
-  data={{
-    url: 'blob:https://github.com/9a929540-38ae-4b08-b370-6a78e800c9b8'
-  }}
-  parentClassName="h-96"
-/>
-
-
-
 <PdfViewer
   data={{
     url: 'https://luisvcsilva.netlify.app/pdfs/desafio_apc.pdf'
