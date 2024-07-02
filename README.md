@@ -163,7 +163,7 @@ Future research can explore the following areas:
 
 <PdfViewer
   data={{
-    url: 'https://github.com/LuisVCSilva/doutorado/blob/main/Se%C3%A7%C3%A3o%20de%20choque/rascunho/report.pdf'
+    url: 'https://luisvcsilva.netlify.app/pdfs/desafio_apc.pdf'
   }}
   parentClassName="h-96"
 />
